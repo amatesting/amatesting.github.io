@@ -1,0 +1,135 @@
+/* =====================================================
+   🎨 1. STYLE GÉNÉRAL DE LA PAGE
+===================================================== */
+body {
+    font-family: Arial, sans-serif; /* Utilise une police simple */
+    background-color: #f4f4f4;      /* Fond gris clair */
+    color: #333;                    /* Texte gris foncé */
+    margin: 0;                      /* Supprime les marges autour de la page */
+    padding: 0;                     /* Supprime les espaces internes */
+}
+
+
+/* =====================================================
+   🔵 2. EN-TÊTE DE LA PAGE (HAUT)
+===================================================== */
+header {
+    background-color: #007BFF; /* Fond bleu vif */
+    color: white;              /* Texte blanc */
+    padding: 20px;             /* Espace intérieur */
+}
+
+
+/* =====================================================
+   🧭 3. MENU DE NAVIGATION
+===================================================== */
+nav ul {
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0;       /* Supprime l’espace intérieur */
+}
+
+nav ul li {
+    display: inline;       /* Affiche les liens sur une seule ligne */
+    margin-right: 15px;    /* Espace entre les liens */
+}
+
+nav ul li a {
+    color: white;             /* Texte en blanc */
+    text-decoration: none;    /* Supprime le soulignement */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Le lien se souligne quand la souris passe dessus */
+}
+
+
+/* =====================================================
+   🧱 4. CONTENU PRINCIPAL (CONTAINER)
+===================================================== */
+.container {
+    width: 90%;              /* Prend 90% de la largeur de l'écran */
+    max-width: 1200px;       /* Ne dépasse pas 1200px */
+    margin: 0 auto;          /* Centre la zone horizontalement */
+    padding: 20px;           /* Ajoute de l’espace intérieur */
+}
+
+
+/* =====================================================
+   📦 5. BOÎTES DE CONTENU OU SERVICES
+===================================================== */
+.box {
+    float: left;                            /* Aligne les boîtes à gauche */
+    width: 30%;                             /* Chaque boîte prend 30% de la largeur */
+    margin: 10px;                           /* Espace autour de la boîte */
+    padding: 15px;                          /* Espace à l’intérieur */
+    border: 1px solid #ccc;                 /* Bordure grise claire */
+    background-color: #fff;                 /* Fond blanc */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);   /* Ombre douce autour */
+}
+
+
+/* =====================================================
+   ✍️ 6. FORMULAIRE
+===================================================== */
+form {
+    display: flex;             /* Utilise Flexbox pour les champs */
+    flex-direction: column;    /* Met les champs les uns en dessous des autres */
+}
+
+input, button {
+    margin-bottom: 10px;  /* Espace entre les éléments */
+    padding: 10px;        /* Espace intérieur dans les champs */
+}
+
+
+/* =====================================================
+   🔘 7. BOUTON AVEC EFFET DE SURVOL
+===================================================== */
+.button {
+    transition: background-color 0.3s; /* Animation douce au changement de couleur */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Fond bleu foncé quand on passe la souris */
+    color: white;              /* Texte blanc */
+}
+
+
+/* =====================================================
+   📬 8. ENCADRÉ POUR LE FORMULAIRE
+===================================================== */
+.form-box {
+    border: 1px solid #ccc;                 /* Bordure grise */
+    padding: 20px;                          /* Espace intérieur */
+    background-color: #fff;                 /* Fond blanc */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);   /* Légère ombre */
+    border-radius: 5px;                     /* Coins arrondis */
+    max-width: 600px;                       /* Largeur maximale du formulaire */
+}
+
+
+/* =====================================================
+   📎 9. PIED DE PAGE (BAS DE PAGE)
+===================================================== */
+footer {
+    text-align: center;             /* Centre le texte */
+    padding: 15px;                  /* Espace intérieur */
+    background-color: #007BFF;      /* Même bleu que l'en-tête */
+    color: white;                   /* Texte blanc */
+    clear: both;                    /* Remet les éléments flottants à zéro */
+}
+
+
+/* =====================================================
+   📱 10. RESPONSIVE DESIGN (ADAPTÉ AUX MOBILES)
+===================================================== */
+@media (max-width: 768px) {
+    .box {
+        width: 100%; /* Sur petit écran, chaque boîte prend toute la largeur */
+    }
+
+    nav ul li {
+        display: block;           /* Les liens sont empilés */
+        margin-bottom: 10px;      /* Espace entre les liens */
+    }
+}

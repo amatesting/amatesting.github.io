@@ -1,0 +1,136 @@
+body
+{
+   width: 760px;
+   margin: no; /* Pour centrer notre page */
+   margin-top: 500px; /* Pour éviter de coller avec le haut de la fenêtre du navigateur. Essayez d'enlever pour voir ! */
+   margin-bottom: -1000px;    /* Idem pour le bas du navigateur */
+   background-image: url("images/ssf4-makoto_big.jpg"); /* Une petite image de fond pour éviter d'avoir un vieux fond blanc :p */
+   background-color: blue;
+   background-repeat: no-repeat;
+   background-size: cover;       /* pour couvrir tout l'arrière-plan */
+   background-attachment: fixed; /* fixe l'image lors du scroll */
+}
+/* L'en-tête */
+
+#en_tete
+{
+   width: 760px;
+   height: 125px;
+   background-image: url("images/kyo-flamefix.gif");
+   background-repeat: no-repeat;
+   margin-bottom: 0px;
+   
+}
+
+/* Le menu */
+
+#menu
+{
+   float: left; /* Le menu flottera à gauche */
+   width: 120px; /* Très important : donner une taille au menu */
+}
+
+.element_menu
+{
+   background-color: #626262;
+   background-image: url("images/kim gif.gif");
+   background-repeat: repeat-x;
+   
+   border: 2px solid black;
+   
+   margin-bottom: 20px; /* Pour éviter que les éléments du menu ne soient trop collés */
+}
+/* Quelques effets sur les menus */
+
+
+.element_menu h3 /* Tous les titres de menus */
+{    
+   color: red;
+   font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+   text-align: center;
+   text-decoration: blink underline;
+   
+}
+
+
+
+.element_menu a /* Tous les liens se trouvant dans un menu */
+{
+   color: #B3B3B3;
+}
+
+.element_menu a:hover /* Quand on pointe sur un lien du menu */
+{
+   background-color: #B3B3B3;
+   color: black;
+}
+
+/* Le corps de la page */
+
+#corps
+{
+   margin-left: 140px; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+   margin-bottom: 20px; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+   padding: 6.5px; /* Pour éviter que le texte à l'intérieur du corps ne colle trop à la bordure */
+   
+   color: #B3B3B3;
+   background-color: #626262; /* Une couleur de fond pour le corps */
+   background-image: url("images/motif.png");
+   background-repeat: repeat-x; /* Une petite image de fond qui se répètera horizontalement en haut */
+   
+   border: 2px solid black; /* Une bordure pour bien marquer les limites du corps et pour faire joli */
+   
+   
+}
+
+#corps h1 /* Tous les titres h1 du corps */
+{
+   color: #B3B3B3;
+   text-align: center;
+   font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+}
+
+#corps h2 /* Tous les titres h2 du corps */
+{
+   height: 30px;
+
+   background-image: url("images/titre.png"); /* Une petite image de fond sur les titres h2 */
+   background-repeat: no-repeat; /* L'image ne se répètera pas, elle sera à gauche du titre */
+   
+   padding-left: 30px;
+   color: #B3B3B3;
+   text-align: left;
+}
+
+
+
+#corps2
+{
+   margin-left: 140px; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+   margin-bottom: 20px; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+   padding: 6.5px; /* Pour éviter que le texte à l'intérieur du corps ne colle trop à la bordure */
+   
+   color: #B3B3B3;
+   background-color: #626262; /* Une couleur de fond pour le corps */
+   background-image: url("images/ssf4-makoto_big.jpg");
+   
+   
+   border: 2px outset black; /* Une bordure pour bien marquer les limites du corps et pour faire joli */
+}
+#corps1
+{
+   margin-left: 140px; /* Une marge à gauche pour pousser le corps, afin qu'il ne passe plus sous le menu */
+   margin-bottom: 20px; /* Ca c'est pour éviter que le corps colle trop au pied de page en-dessous */
+   padding: 45px; /* Pour éviter que le texte à l'intérieur du corps ne colle trop à la bordure */
+   
+   color: #B3B3B3;
+   background-color: #626262; /* Une couleur de fond pour le corps */
+   background-image: url("images/kung_fu_1024x768.jpg");
+ 
+   
+   border: 2px solid black; /* Une bordure pour bien marquer les limites du corps et pour faire joli */
+}
+
+.restela
+{position: fixed
+}

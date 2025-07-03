@@ -1,0 +1,105 @@
+<!-- Déclaration du type de document -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+
+<!-- Début du document HTML, langue en français -->
+<html lang="fr">
+
+<head>
+    <!-- Encodage UTF-8 pour les accents -->
+    <meta charset="UTF-8">
+    <!-- Responsive design : s'adapte aux écrans -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre affiché dans l'onglet du navigateur -->
+    <title>CONTACT</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="zontact.css">
+</head>
+
+<body>
+
+    <!-- En-tête du site -->
+    <header>
+        <h1>CENTRE SYAMDO </h1>
+        <!-- Menu de navigation -->
+        <nav>
+            <ul>
+                <li><a href="p1acceuil.html">MENU PRINCIPAL</a></li>
+                <li><a href="p2menu.html">NOS COURS</a></li>
+                <li><a href="profil.html">L'EQUIPE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main class="container">
+
+        <!-- Section à propos -->
+        <section id="about">
+            <h2>L'académie</h2>
+           
+           
+        </section>
+
+        <!-- Section services -->
+        <section id="services">
+            <h2>Nos Services</h2>
+
+            <!-- Boîte service 1 -->
+            <div class="box">
+                <h3>Cours d'arts martiaux et de développement personnel en ligne</h3>
+                <p>Nous mettons à votre disposition des cours en ligne .</p>
+            </div>
+
+            <!-- Boîte service 2 -->
+            <div class="box">
+                <h3>Coachs personnels en vidéo conférence ou à domicile ou dans notre Centre sur Rdv</h3>
+                <p>Nous pouvons vous aider à faire des progrés dans votre vie personnel, à reprendre confiance en vous <br/>
+					A améliorer votre santé, et cela dans tous les domaine.<br />
+					Nous avons des experts en psycho-thérapie, santé, sport,art-martial,nutrition,...<br />
+					Notre centre étant un grande structure, nous serons à votre entière service.
+					N'hésitez pas à prendre contacte avec nous, notre service est disponible 24h/24.
+				</p>
+            </div>
+        </section>
+
+        <!-- Section contact -->
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+
+            <!-- Formulaire de contact avec bordure -->
+            <form class="form-box" action="/submit" method="POST">
+                <!-- Champ prénom -->
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <!-- Champ nom -->
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Champ adresse -->
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" required>
+
+                <!-- Champ code postal -->
+                <label for="codepostal">Code postal :</label>
+                <input type="text" id="codepostal" name="codepostal" required>
+
+                <!-- Champ email -->
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Bouton d’envoi -->
+                <button class="button" type="submit">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 SYAMDO ACADEMY tous droits réservés</p>
+    </footer>
+
+</body>
+</html>

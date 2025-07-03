@@ -1,0 +1,104 @@
+/* Reset global */
+* {
+  margin: 0;               /* Supprime les marges par défaut */
+  padding: 0;              /* Supprime les paddings par défaut */
+  box-sizing: border-box; /* Inclut padding et border dans les dimensions */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif; /* Police de caractères principale */
+  background: #f4f4f4;                 /* Couleur de fond de la page */
+  color: #333;                         /* Couleur du texte principale */
+  line-height: 1.6;                    /* Hauteur de ligne pour améliorer la lisibilité */
+  padding: 20px;                       /* Espace intérieur autour du contenu */
+}
+
+.cv-container {
+  max-width: 800px;                             /* Largeur maximale du conteneur */
+  margin: auto;                                 /* Centrage horizontal automatique */
+  background: white;                            /* Fond blanc */
+  padding: 30px;                                /* Espace intérieur */
+  border-radius: 8px;                           /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);       /* Ombre légère autour du bloc */
+}
+
+header {
+  display: flex;            /* Affiche les enfants en ligne (flexbox) */
+  align-items: center;      /* Centre les éléments verticalement */
+  gap: 20px;                /* Espace entre les enfants */
+  margin-bottom: 30px;      /* Espace sous l'en-tête */
+  flex-wrap: wrap;          /* Permet de passer à la ligne si nécessaire */
+}
+
+.photo {
+  flex-shrink: 0;           /* Empêche le bloc de photo de rétrécir */
+}
+
+.photo img {
+  width: 100px;             /* Largeur fixe de l'image */
+  height: 100px;            /* Hauteur fixe de l'image */
+  border-radius: 50%;       /* Rend l'image circulaire */
+  object-fit: cover;        /* Coupe l'image pour remplir le cadre sans déformation */
+  border: 2px solid #2980b9;/* Bordure bleue autour de la photo */
+}
+
+.info {
+  flex: 1;                  /* Prend tout l’espace disponible restant */
+  min-width: 200px;         /* Largeur minimale du bloc texte */
+}
+
+.info h1 {
+  font-size: 32px;          /* Taille de la police du nom */
+  color: #2c3e50;           /* Couleur du texte du nom */
+}
+
+section {
+  margin-bottom: 25px;      /* Espace entre les sections */
+}
+
+section h2 {
+  color: #2980b9;               /* Couleur du titre de section */
+  margin-bottom: 10px;          /* Espace sous le titre */
+  border-bottom: 1px solid #ddd;/* Ligne grise claire sous le titre */
+  padding-bottom: 5px;          /* Espace entre le texte et la ligne */
+}
+
+h3 {
+  margin-top: 15px;         /* Espace au-dessus du sous-titre */
+  font-size: 18px;          /* Taille du texte pour les sous-titres */
+  color: #2c3e50;           /* Couleur du texte */
+}
+
+ul {
+  margin-top: 5px;          /* Espace avant la liste */
+  padding-left: 20px;       /* Décalage à gauche pour les puces */
+}
+
+a {
+  color: #2980b9;           /* Couleur des liens */
+  text-decoration: none;    /* Supprime le soulignement */
+}
+
+a:hover {
+  text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+/* Responsive design pour écrans <= 600px */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;          /* Réduit les marges sur petit écran */
+  }
+
+  .cv-container {
+    padding: 20px;          /* Réduit les espacements intérieurs */
+  }
+
+  .info h1 {
+    font-size: 24px;        /* Réduit la taille du nom */
+  }
+
+  .photo img {
+    width: 80px;            /* Réduit la taille de la photo */
+    height: 80px;
+  }
+}

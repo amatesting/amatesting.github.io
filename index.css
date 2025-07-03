@@ -1,0 +1,69 @@
+/* ----------------------- */
+/* 1. Fond et style général */
+/* ----------------------- */
+body {
+  background-image: url("images/StreetFighter.jpg"); /* Image de fond */
+  background-size: cover;      /* L'image couvre tout l'écran */
+  background-repeat: no-repeat; /* L'image ne se répète pas */
+  background-attachment: fixed; /* L'image reste fixe quand on fait défiler la page */
+  margin: 100;                   /* Enlève les marges par défaut */
+  padding: 0;                  /* Enlève les espaces internes */
+  font-family: Arial, sans-serif; /* Police simple et lisible */
+  color: #000;                 /* Texte en noir */
+}
+
+/* ---------------------------- */
+/* 2. Style des citations (blockquote) */
+/* ---------------------------- */
+blockquote {
+  font-size: x-large;          /* Texte plus grand */
+  margin: 20px auto;           /* Espace autour et centré */
+  width: 80%;                  /* Largeur à 80% de la page */
+  text-align: center;          /* Centre le texte */
+  font-style: italic;          /* Texte en italique */
+  color: #FFFF00;             /* Couleur jaune */
+  background-color: rgba(255, 255, 255, 0.7); /* Fond blanc transparent */
+  padding: 15px 20px;          /* Espace interne */
+  border-left: 5px solid #444; /* Barre décorative à gauche */
+  font-weight: bold				/*gras*/
+}								
+
+/* ---------------------- */
+/* 3. Ligne horizontale (hr) */
+/* ---------------------- */
+hr {
+  border: none;                /* Pas de bordure */
+  height: 2px;                 /* Hauteur de la ligne */
+  background-color: black;     /* Couleur noire */
+  margin: 30px auto;           /* Espace au-dessus et en-dessous, centré */
+  width: 80%;                  /* Largeur à 80% */
+}
+
+/* ------------------------ */
+/* 4. Images flottantes (.flottante) */
+/* ------------------------ */
+.flottante {
+  float: left;                 /* Flotte à gauche du texte */
+  margin-right: 10px;          /* Espace à droite */
+  max-width: 100px;            /* Largeur maximale */
+  height: auto;                /* Hauteur automatique */
+}
+
+/* ----------------------------- */
+/* 5. Centrage des blocs centrés */
+/* ----------------------------- */
+div[style*="text-align:center;"] {
+  margin: 20px auto;           /* Espace autour + centré */
+}
+
+/* ----------------------------- */
+/* 6. Encadrer l'image Thmitnick.gif */
+/* ----------------------------- */
+.encadre-image {
+  border: 3px solid blue;    /* Bordure noire épaisse autour de l'image */
+  padding: 5px;               /* Espace entre la bordure et l'image */
+  display: inline-block;      /* Pour que le padding soit bien pris en compte */
+  background-color: white;    /* Fond blanc pour faire ressortir l'image */
+  max-width: 150px;           /* Largeur maximale (ajuste selon besoin) */
+  height: auto;               /* Hauteur proportionnelle */
+}
